@@ -22,6 +22,7 @@ public class Car {
     }
 
     public static void main(String[] args) {
+        System.out.println();
         Car toyta = new Car("Base", 2026, "black");
         toyta.print();
     }

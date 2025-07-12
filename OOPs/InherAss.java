@@ -1,5 +1,7 @@
 package OOPs;
+
 // Solution to Inheritance and Association Problem
+
 class Animal{
     void eat(String item){
         System.out.println("Eating " + item);
@@ -15,6 +17,7 @@ class Whale extends Animal{
 
     Whale(String name){
         this.name = name;
+
     }
 }
 
@@ -36,6 +39,7 @@ class Person{
 
 public class InherAss {
     public static void main(String[] args) {
+        System.out.println();
         Whale merry = new Whale("Merry");
         Person B1 = new Person("B1", merry);
 
