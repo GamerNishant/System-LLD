@@ -1,5 +1,14 @@
 package OOPs;
 
+// This is your question (You need to do this simultaneously):
+// Animal->whale->eat() // khane k gun dega
+// person->whale->play() // sath khelna chahta hai
+/*
+ *
+ * merry.eat()
+ * b1.play()
+ * merry.eat()
+ */
 // Solution to Inheritance and Association Problem
 
 class Animal{
@@ -13,6 +22,10 @@ class Whale extends Animal{
 
     void play(){
         System.out.println("Whale : Doing water splashes...");
+    }
+
+    void eat(String item){
+        System.out.println("Whale Eating " + item);
     }
 
     Whale(String name){
@@ -31,7 +44,7 @@ class Person{
     }
 
     void play(){
-        System.out.printf("Hi %s, I am %s show me some moves\n", this.pet.name, this.name);
+        System.out.printf("Hi %s, I am %s show me some moves \n", this.pet.name, this.name);
         this.pet.play();
     }
 }
